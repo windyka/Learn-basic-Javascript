@@ -1,6 +1,4 @@
-var greeting = "Hello world"
-
-
-function show() {
-    alert(greeting + ", Are you OK?");
+change = () => {
+    var x = document.getElementById('name')
+    x.value = x.value.toUpperCase()
 }
