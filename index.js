@@ -1,9 +1,9 @@
-change = () => {
-    var x = document.getElementById('name')
-    x.value = x.value.toUpperCase()
-}
+window.onload = function () {
+    var btn = document.getElementById("demo")
+    btn.addEventListener("click", myFunction)
 
-changeToLowerCase = () => {
-    var x = document.getElementById('lower')
-    x.value = x.value.toLowerCase()
+    function myFunction() {
+        alert(Math.random())
+        btn.removeEventListener("click", myFunction)
+    }
 }
