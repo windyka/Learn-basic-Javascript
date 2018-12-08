@@ -1,27 +1,12 @@
-var images = [
-    'http://www.sololearn.com/uploads/slider/1.jpg',
-    'http://www.sololearn.com/uploads/slider/2.jpg',
-    'http://www.sololearn.com/uploads/slider/3.jpg'
-];
-
-var num = 0;
-
-next = () => {
-    var slider = document.getElementById("slider");
-    num++;
-    if (num >= images.length) {
-        num = 0;
+validate = () => {
+    var x = document.getElementById('num1')
+    var y = document.getElementById('num2')
+    var body = document.getElementsByTagName('BODY')[0]
+    if (x.value == y.value && y.value !== '' && x.value !== '') {
+        body.style.backgroundColor = 'red'
+        return true
+    } else {
+        alert("The values should be equal and not blank");
+        return false
     }
-    slider.src = images[num];
-    console.log(slider)
-}
-
-pref = () => {
-    var slider = document.getElementById("slider");
-    num--;
-    if (num < 0) {
-        num = images.length - 1;
-    }
-    slider.src = images[num];
-    console.log(slider)
 }
