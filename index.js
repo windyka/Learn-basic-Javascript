@@ -1,12 +1,7 @@
-validate = () => {
-    var x = document.getElementById('num1')
-    var y = document.getElementById('num2')
-    var body = document.getElementsByTagName('BODY')[0]
-    if (x.value == y.value && y.value !== '' && x.value !== '') {
-        body.style.backgroundColor = 'red'
-        return true
-    } else {
-        alert("The values should be equal and not blank");
-        return false
-    }
-}
+let arr = ['1', '2', '3'];
+
+let [one, two, three] = arr;
+
+console.log(one); // 1
+console.log(two); // 2
+console.log(three); // 3
